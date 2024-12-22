@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxic</title>
+    <link rel="stylesheet" href="pa.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar" style="    margin: 0;
+    padding: 0;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    color: cornsilk;
+    position: fixed;
+    font-size: larger;
+    z-index: 9999;
+    top: 2px;">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+                <a href="index.html">Toxic</a></div>
+            <div class="about">
+                <ol style="margin-top: 20px;">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="hoodies.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="hoodies.html">Contact</a></li>
+                    
+                    <li class="date"></li>
+                </ol>
+            </div>
+           
+        </div>
+
+
+    </div>
+
+
+    <div class="container_h">
+        <div class="appear" >
+            <img src="bg/truck_14105821.png" alt="Not Image found" style="width:50px; height: 38px;">
+        </div> 
+        <div  class="text" class="appear">
+            <p><h2>No need to wait, your order is on its way</h2></p>
+        </div>
+    </div> 
+    
+    
+   <div class="mid">  
+        <div class="checkout_block ">
+            <div class="checkout_information">
+            
+            <div class=delivery_methods>
+                <h1>Delivery Methods</h1>
+                <div class="delevery_block">
+                    <div class="Home_delivery">
+                            <input type="radio"   name="input" id="H" checked style=" height: 20px;">
+                                    <img  src="https://eg.hm.com/icons/home-delivery.svg" style="width: 30px; margin-right: 3px; " >
+                                    <label for="H" >Door delivery </label>
+                        </div>
+                        
+                    <div class="station">
+                            <input type="radio"  name="input"  id="P"  style=" height: 20px;">
+                                    <img   src="https://eg.hm.com/icons/click-collect.svg"   style="width:30 px;">
+                                    <label for="P">Pick-up station (Free shipping )</label>
+                                
+
+                        </div>
+                </div>
+            </div>
+
+
+
+             <div class="mid2">
+                <div class="user_information">
+                    <form class="User_information" >
+                        <table > 
+                                <tr  class="input_container" >
+                                    <td  class="column"><label for="input" class="label">Full Name: </label>
+                                        <input type="text" id="input" required></td>
+                                    <td class="column"><label for="input1" class="label">Mobile Number: </label><input type="text" id="input1" required></td>
+                                </tr>
+                                <tr class="input_container">
+                                    <td rowspan="2" class="column"><label for="input2" class="label">Your Address: </label><input type="text" id="input2" required></td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="column" >
+                                    <select name="city" style="color: rgb(254, 253, 253);" >
+                                        <option value="1">Cairo</option>
+                                        <option value="2">Alexandria</option>
+                                        <option value="3">Luxour</option>
+                                        <option value="4">kafr elsheikh</option>
+                                        <option value="5">ALBeheira</option>
+                                        <option value="6">Aswan</option>
+                                    </td>
+                                    </select>
+                                </tr>
+                                <tr  class="number">
+                                    <td rowspan="2"  class="column"><label for="input3" class="label"> Building Number:</label><input type="number" id="input3" required min="1" style="color: rgb(247, 245, 245);" ></td>
+                                </tr>
+                                <tr class="number">
+                                    <td  class="column"><label for="input4" class="label"> Floor Number:</label><input type="number" id="input4" required min="1"  max="20" style="color: rgb(255, 255, 255); "></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td class="column">  <button class="pop_button" >Save</button>
+                            </td>
+                                </tr>
+                                
+                        </table> 
+                    </form>   
+                </div>
+
+
+                <div class="summary_title" ><h1>Order Details</h1></div>
+
+                <div class="Summary_order">
+                    <div class="details">
+                            <img src="IMG-20241220-WA0019-removebg-preview.png" alt="NOT found" style="width: 150px; height: 150px;">
+                        <div class="par">      
+                            <h1 style="padding-left: 50px; padding-bottom: 9px;">Toxic</h1>
+                            <button onclick="location.href='index_hoodies.html'">Basic Hoodies</button>
+                            <div style="
+                            color: white;
+                            padding-left: 27px;">
+                                <p> Price:EGP 499.00</p>
+                                <p>Color: Black</p>
+                                <p>Size: XL</p>
+                            </div>
+                            
+                        </div>                   
+                    </div>
+                    <div class="par_sal">
+                        <p>Subtotal:         EGP 499.00</p>
+                        <br>
+                        <p>Order Total:      EGP 499.00</p>
+                    </div>
+                </div>
+                </div>
+
+
+
+                <div class="payment_methods">
+                    <h2>payment Methods</h2>
+                    <div class="pay_block">
+                        <div class="cash_on_delivery">
+                            <input type="radio"  name="Payment" value=" cash_on_delivery" id="C" checked>
+                                    <img src="" alt="">
+                                    <label for="C">cash on delivery</label>
+                            </div>
+                        <div class="cradit_card">
+                            <input type="radio"  name="Payment" value=" Credit/Debit Card" id="d" checked>
+                                    <img src="" alt="">
+                                    <label for="d"> cradit/debit card</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <div class="complete_purchase">
+            <input type="checkbox" name="" id="oo">
+            <label for="oo">  I confirm that I have read and accept the Privacy Policy and Terms & Conditions of purchase, read our Return & Refunds page</label>
+            <div class="complete_botton">
+                <br><br> <button> <a href="">complete purchase</a> </button>  
+            </div>
+
+        </div> 
+    </div>
+
+
+
+
+
+
+    <div class="footer" style="display: flex;background-color: rgba(29, 29, 29, 0.849); width: 100%;
+min-height: 80px; font-size: larger;
+padding: 20p2;
+color: #fff;
+text-align: center;
+font-size: 16px;
+box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);">
+
+<div class="sec1" style="display: flex; flex-direction: column; margin-top: 30px;" >
+    <h1>Toxic</h1>
+    <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br> Sed vel est <br> vitae nisi sagittis semper.</p>
+    <div class="icon" style="margin: 10px;">
+    <img style="margin:15px 15px;margin-bottom: 30px; width:26px" src="photos/facebook_2504903.png" alt="Facebook">
+    <img style="margin:15px 15px;margin-bottom: 30px; width:26px" src="photos/instagram_2504918.png" alt="Instagram">
+    <img style="margin:15px 15px;margin-bottom: 30px; width:26px" src="photos/github_3291695.png" alt="Githup">
+    </div>
+</div>
+
+
+
+
+<div class="sec2" style="display: flex; flex-direction: column; margin-top: 30px; margin-left: 80px; font-size: larger;" >
+<h4><a  style="color: white; text-decoration: none;">About Us</a></h4>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+
+
+</div>
+
+
+
+
+<div class="sec3" style="display: flex; flex-direction: column; margin-top: 30px; margin-left: 80px; font-size: larger;">
+    <h4><a style="color: white; text-decoration: none;" href="">Our Services</a></h4>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+</div>
+
+
+
+
+<div class="sec4" style="display: flex; flex-direction: column; margin-top: 30px; margin-left: 80px; font-size: larger;">
+    <h4><a style="color: white; text-decoration: none;" href="">Helpful Links</a></h4>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+</div>
+
+
+
+
+<div class="sec5" style="display: flex; flex-direction: column; margin-top: 30px; margin-left: 80px; font-size: larger;">
+    <h4><a style="color: white; text-decoration: none;" href="">Contact Us</a></h4>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+<p style="margin-top: 20%;">Lorem, ipsum.</p>
+</div>
+
+
+
+
+
+
+
+    </div>
+    <script src="date.js"></script>
+</body>
+</html>

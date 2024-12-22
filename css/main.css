@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@300..900&display=swap');
+
+*{
+    font-family: "Rubik",sans-serif;
+}
+body{
+    margin: auto;
+    position: relative;
+    
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    height: 100%;
+    
+    
+}
+.navbar{
+    width: 100%;
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(#000000);
+    color: cornsilk;
+    position: fixed;
+    font-size: larger;
+    z-index: 9999;
+}
+.logo{
+    width: 20%;  
+}
+
+.about{
+    width: 80%;
+    
+}
+.about ol{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+.navbar li{
+    min-width: 120px;
+}
+.navbar a{
+    text-decoration: none;
+    
+    color: white;
+}
+.home{
+     position: relative;
+    background-image: url("../bg/WhatsApp_Image_2024-12-08_at_02.45.37_3d1d7ef3-removebg-preview.png");   
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: trans 50s linear infinite  ;
+    overflow: hidden;
+    }
+
+ @keyframes trans {
+    to{
+        background-position: 0 137%;
+    }
+ }
+
+
+
+.shadow{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    /* z-index: 1; */
+
+}
+
+.home-cont{
+
+    text-align: center;
+    /* background-image: linear-gradient(rgba(73, 8, 73, 0.521),rgba(0, 0, 0, 0.51)); */
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2;
+    /* border: solid 1px white; */
+    /* box-shadow: 3px 3px 3px rgb(0, 0, 0); */
+}
+.home-cont h2{
+    position: relative;
+    left: -500px;
+    color: transparent;
+    font-size: 50px;
+    background: white;
+    background-clip: text;
+    animation: ease-left ease-out 2s    forwards ;    
+}
+
+
+
+@keyframes ease-left {
+    to{
+        left: 0px;
+        
+    }
+}
+
+.home-cont input{
+    position: relative;
+    right:  -500px;
+    color: white;
+    /* background-color: transparent; */
+    border: solid 1px white ;
+    border-radius: 8px;
+    /* border-color: transparent; */
+    font-size: 20px;    
+    height: 50px;
+    width: 150px;
+    animation: ease-right ease-out 2s 1.5s   forwards ;   
+    
+    box-shadow: 3px 3px 3px rgb(255, 0, 195);
+    /* margin-left: 308px; */
+    padding: 0;
+    color: rgb(246, 246, 246);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.194);
+    transition: all 0.1s ease-in-out;
+
+    cursor: pointer; 
+    transition: transform 0.1s ease;
+}
+
+.home-cont input:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.home-cont input:active{
+    transform: scale(0.9);
+}
+
+
+@keyframes ease-right {
+    to{
+        right: 0px;
+        
+    }
+} 
+
+.hidden{
+    display: none;
+}
